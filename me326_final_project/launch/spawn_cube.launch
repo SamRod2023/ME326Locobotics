@@ -21,7 +21,7 @@
 
 
   <!-- Now spawn the red cube again approximately 1m from the locobot orgin near the blue cube -->
-  <param name="red_cube_model" textfile="$(find me326_locobot_example)/model/red_cube.urdf"/>
+  <param name="red_cube_model" textfile="$(find me326_final_project)/model/red_cube.urdf"/>
   <!-- X,Y,Z location of the cube in the world frame -->
   <arg name="red_cube_x" default="1.5"/>
   <arg name="red_cube_y" default="0.3"/>
@@ -29,7 +29,7 @@
   <!-- Roll, pitch, yaw (zero means no rotation) -->
   <arg name="red_cube_R" default="0.0"/>
   <arg name="red_cube_P" default="0.0"/>
-  <arg name="red_cube_Y" default="0.0"/>
+  <arg name="red_cube_Y" default="0.444"/>
 
   <!-- Spawn the cube -->
   <node name="spawn_red_cube" pkg="gazebo_ros" type="spawn_model" args="-urdf -param red_cube_model -model red_cube -x $(arg red_cube_x) -y $(arg red_cube_y) -z $(arg red_cube_z) -R $(arg red_cube_R) -P $(arg red_cube_P) -Y $(arg red_cube_Y)" respawn="false" output="screen" />
@@ -37,7 +37,7 @@
   <!-- ############################################################# -->
 
   <!-- Now spawn the green cube again approximately 1m from the locobot orgin near the blue cube -->
-  <param name="green_cube_model" textfile="$(find me326_locobot_example)/model/green_cube.urdf"/>
+  <param name="green_cube_model" textfile="$(find me326_final_project)/model/green_cube.urdf"/>
   <!-- X,Y,Z location of the cube in the world frame -->
   <arg name="green_cube_x" default="1.5"/>
   <arg name="green_cube_y" default="-0.3"/>
@@ -55,7 +55,7 @@
 
 
   <!-- Now spawn the yellow cube again approximately 1m from the locobot orgin near the blue cube -->
-  <param name="yellow_cube_model" textfile="$(find me326_locobot_example)/model/yellow_cube.urdf"/>
+  <param name="yellow_cube_model" textfile="$(find me326_final_project)/model/yellow_cube.urdf"/>
   <!-- X,Y,Z location of the cube in the world frame -->
   <arg name="yellow_cube_x" default="1.8"/>
   <arg name="yellow_cube_y" default="0.0"/>

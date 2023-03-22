@@ -3,7 +3,7 @@
   <link name="my_box">
     <inertial>
       <origin xyz="0 0 0" />
-      <mass value="0.5" />
+      <mass value="0.005" />
       <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
     </inertial>
     <visual>
@@ -17,9 +17,21 @@
       <geometry>
         <box size="0.02 0.02 0.02" />
       </geometry>
+      <surface>
+        <kd>100000</kd>
+      	<friction>
+      	  <ode>
+      	    <mu>1000</mu>
+      	    <mu2>1000</mu2>
+      	  </ode>
+      	</friction>
+      </surface>
     </collision>
   </link>
   <gazebo reference="my_box">
     <material>Gazebo/Red</material>
+    <mu1>10000</mu1>
+    <mu2>10000</mu2>
+    <kd>100000</kd>
   </gazebo>
 </robot>
