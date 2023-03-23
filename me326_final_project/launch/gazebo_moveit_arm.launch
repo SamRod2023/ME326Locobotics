@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<launch>
+
+<group ns="locobot">
+  <node type="locobot_arm_motion.py" name="locobot_arm_motion" pkg="me326_final_project" respawn="false" output="screen" />
+</group>
+
+</launch>
